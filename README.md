@@ -4,6 +4,7 @@ A beginner-friendly Python command-line application for practicing CRUD operatio
 
 ## What is CRUD?
 
+#
 CRUD represents the four basic operations used in most applications:
 
 - **Create**: Add a new task.
