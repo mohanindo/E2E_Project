@@ -1,0 +1,54 @@
+:root {
+  font-family: Arial, sans-serif;
+  color: #1f2937;
+  background: #f3f4f6;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+button, input, textarea { font: inherit; }
+.container { width: min(900px, calc(100% - 32px)); margin: 40px auto; }
+.eyebrow { margin: 0; color: #2563eb; font-size: 12px; font-weight: bold; letter-spacing: 2px; }
+h1 { margin: 6px 0; }
+h2 { margin-top: 0; }
+.subtitle, .section-heading p { color: #6b7280; }
+
+section {
+  margin: 20px 0;
+  padding: 24px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 8%);
+}
+
+form { display: grid; gap: 14px; }
+label { display: grid; gap: 6px; font-weight: bold; }
+input, textarea { padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; }
+textarea { min-height: 80px; resize: vertical; }
+button { width: fit-content; padding: 10px 16px; border: 0; border-radius: 6px; color: white; background: #2563eb; font-weight: bold; cursor: pointer; }
+.secondary { color: #1f2937; background: #e5e7eb; }
+.danger { background: #dc2626; }
+.small { padding: 7px 10px; font-size: 13px; }
+.row-actions { display: flex; gap: 7px; }
+.delete-panel { border: 1px solid #fecaca; }
+.section-heading { display: flex; align-items: center; justify-content: space-between; }
+.section-heading h2, .section-heading p { margin: 0; }
+.id-form { grid-template-columns: 1fr auto; align-items: end; }
+.checkbox-label { display: flex; align-items: center; gap: 8px; }
+.checkbox-label input { width: auto; }
+
+.notice { margin: 18px 0; padding: 12px; border-radius: 6px; font-weight: bold; }
+.success { color: #166534; background: #dcfce7; }
+.error { color: #991b1b; background: #fee2e2; }
+.result { margin-top: 18px; padding: 15px; border-radius: 6px; background: #eff6ff; }
+.result p { margin-bottom: 0; }
+.empty { color: #6b7280; }
+.table-wrapper { margin-top: 18px; overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 11px; border-bottom: 1px solid #e5e7eb; text-align: left; }
+th { background: #f8fafc; }
+
+@media (max-width: 600px) {
+  .container { margin: 20px auto; }
+  .id-form { grid-template-columns: 1fr; }
+}
